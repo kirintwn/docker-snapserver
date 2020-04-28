@@ -1,0 +1,12 @@
+---
+version: "3.7"
+services:
+  portainer:
+    build: ./
+    container_name: snapserver
+    command: "--stream.stream=spotify:///librespot?name=spotify&username=${SPOTIFY_USERNAME}&password=${SPOTIFY_PASSWORD}"
+    ports:
+      - "1704:1704"
+      - "1705:1705"
+      - "1780:1780"
+    restart: always

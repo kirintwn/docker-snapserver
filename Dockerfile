@@ -32,7 +32,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists
 
 ARG ARCH=amd64
-ARG SNAPCAST_VERSION=0.19.0
+ARG SNAPCAST_VERSION=0.20.0
 ARG POSTFIX=-1
 
 RUN curl -sL -o /tmp/snapserver.deb https://github.com/badaix/snapcast/releases/download/v${SNAPCAST_VERSION}/snapserver_${SNAPCAST_VERSION}${POSTFIX}_${ARCH}.deb \

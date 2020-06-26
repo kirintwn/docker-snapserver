@@ -2,7 +2,7 @@
 version: "3.7"
 services:
   snapserver:
-    image: kirintwn:snapserver
+    image: kirintwn/snapserver
     container_name: snapserver
     command: "--stream.stream=spotify:///librespot?name=spotify&username=${SPOTIFY_USERNAME}&password=${SPOTIFY_PASSWORD}"
     ports:
